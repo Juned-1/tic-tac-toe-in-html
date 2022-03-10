@@ -1,0 +1,65 @@
+body{
+    background-color: #52e3ae;
+}
+#header-line{
+    /*move text center*/
+    text-align: center;
+}
+.tic-division{
+    height: 300px;
+    width: 50%;
+    /*border: 3px solid red;*/
+    /*move the object, division to center*/
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    /*aligning item*/
+    align-items: center;
+}
+.board{
+    width: 100%;
+    height: 100%;
+}
+td{
+    border: 2px solid #333;
+    height: 90px;
+    width: 34%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 3em;
+    cursor: pointer;
+}
+table{
+    /* border collapse is going to make all the border of cell integrated rather differnt border for different cell in between*/
+    border-collapse: collapse;
+}
+table tbody tr:first-child td{
+    border-top: 0;
+}
+table tbody tr:last-child td{
+    border-bottom: 0;
+}
+table tbody tr td:first-child{
+    border-left: 0;
+}
+table tbody tr td:last-child{
+    border-right: 0;
+}
+.endgame{
+    display: none;
+    width: 30%;
+    height: 50px;
+    top: 140px;
+    position: absolute;
+    /*border: 2px solid red;*/
+    background-color: rgba(205,133,63,0.8);
+    left: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
